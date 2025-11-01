@@ -93,5 +93,5 @@ It collects real-time sensor data, processes it using Apache Spark, stores it in
 - Apache Spark Structured Streaming Guide  
 - Apache Superset Official Docs
 
-## note that
+## Note that
 The project plan is flexible, and additional functionalities may be incorporated as development evolves.
