@@ -26,6 +26,8 @@ It collects real-time sensor data, processes it using Apache Spark, stores it in
 - Deroit/ETL transformation layer.
 - Superset dashboards.
 
+## note that
+The project plan is flexible, and additional functionalities may be incorporated as development evolves.
 ### Timeline (Example)
 
 | Phase   | Task                         | Responsible    |
