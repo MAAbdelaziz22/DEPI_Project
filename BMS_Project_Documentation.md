@@ -26,8 +26,7 @@ It collects real-time sensor data, processes it using Apache Spark, stores it in
 - Deroit/ETL transformation layer.
 - Superset dashboards.
 
-## note that
-The project plan is flexible, and additional functionalities may be incorporated as development evolves.
+
 ### Timeline (Example)
 
 | Phase   | Task                         | Responsible    |
@@ -92,4 +91,7 @@ The project plan is flexible, and additional functionalities may be incorporated
 ## 4. References
 - Apache Kafka Documentation  
 - Apache Spark Structured Streaming Guide  
-- Apache Superset Official Docs  
+- Apache Superset Official Docs
+
+## note that
+The project plan is flexible, and additional functionalities may be incorporated as development evolves.
