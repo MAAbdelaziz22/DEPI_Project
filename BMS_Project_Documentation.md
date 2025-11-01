@@ -47,19 +47,20 @@ It collects real-time sensor data, processes it using Apache Spark, stores it in
 
 ### Data Pipeline (Architecture)
 
-Python Generator
-       ↓
-Kafka Topic (raw stream)
-       ↓
-Spark Structured Streaming (processing)
-       ↓
-Hive / Data Warehouse (storage)
-       ↓
-Deroit / ETL Layer (modeling)
-       ↓
-Superset (visualization)
-       ↓
-Dashboard (final output)
+- Python Generator  
+  ↓  
+- Kafka Topic (raw stream)  
+  ↓  
+- Spark Structured Streaming (processing)  
+  ↓  
+- Hive / Data Warehouse (storage)  
+  ↓  
+- Deroit / ETL Layer (modeling)  
+  ↓  
+- Superset (visualization)  
+  ↓  
+- Dashboard (final output)
+
 
 
 
