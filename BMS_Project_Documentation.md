@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 The BMS project is designed to monitor and control building environments (temperature, humidity, lighting, etc.) using an end-to-end data pipeline.  
-It collects real-time sensor data, processes it using Apache Spark, stores it in Hive, models it in the Deroit/ETL layer, and visualizes insights in Apache Superset dashboards.
+It collects real-time sensor data, processes it using Apache Spark, stores and streams with Druid DB, and visualizes insights in Apache Superset dashboards.
 
 ---
 
@@ -15,34 +15,32 @@ It collects real-time sensor data, processes it using Apache Spark, stores it in
 - Provide scalable architecture using open-source tools.
 
 ### Scope
-- Includes: Data collection, processing, storage, modeling, visualization.
+- Includes: Data collection, processing, storage, modeling, and visualization.
 - Excludes: Physical sensor installation or building control hardware.
 
 ### Deliverables
 - Python data generator for simulation.
 - Kafka topic for streaming.
 - Spark Structured Streaming jobs.
-- Hive warehouse setup.
-- Deroit/ETL transformation layer.
+- druid db
 - Superset dashboards.
 
 
 ### Timeline (Example)
 
-| Phase   | Task                         | Responsible    |
-|----------|------------------------------|----------------|
+| Phase   | Task                          | Responsible    |
+|---------|-------------------------------|----------------|
 | Phase 1 | Data generator & Kafka setup  | Developer      |
 | Phase 2 | Spark streaming pipeline      | Data Engineer  |
-| Phase 3 | Hive storage setup            | Data Engineer  |
-| Phase 4 | ETL modeling (Deroit)         | Data Engineer  |
-| Phase 5 | Superset dashboards           | Data Analyst   |
+| Phase 3 | druid db                      | Data Engineer  |
+| Phase 4 | Superset dashboards           | Data Analyst   |
 
 
 ### Tools and Technologies
 - **Languages:** Python, SQL  
-- **Frameworks:** Spark, Hive, Superset  
+- **Frameworks:** Spark, Druid, Superset  
 - **Streaming:** Kafka  
-- **Storage:** HDFS / Hive Warehouse  
+- **Storage:** druid
 - **Visualization:** Apache Superset  
 - **Version Control:** GitHub  
 
@@ -54,9 +52,7 @@ It collects real-time sensor data, processes it using Apache Spark, stores it in
   ↓  
 - Spark Structured Streaming (processing)  
   ↓  
-- Hive / Data Warehouse (storage)  
-  ↓  
-- Deroit / ETL Layer (modeling)  
+- druid db  
   ↓  
 - Superset (visualization)  
   ↓  
