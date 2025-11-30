@@ -49,20 +49,28 @@ It collects real-time sensor data, processes it using Apache Spark, stores and s
 ### Data Pipeline (Architecture)
 
 Python Generator
-        ↓
+      |
+      v
 Kafka Topic (raw stream)
-        ↓
+      |
+      v
 Spark Structured Streaming (processing)
-        ↓
+      |
+      v
 Kafka New Topic
-        ↓
+      |
+      v
 Pinot Real-Time Database
-        ↓
+      |
+      v
 Trino SQL Engine
-        ↓
+      |
+      v
 Superset (Visualization)
-        ↓
+      |
+      v
 Dashboard (Final Output)
+
 
 
 
