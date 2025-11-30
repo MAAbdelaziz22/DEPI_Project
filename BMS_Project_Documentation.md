@@ -22,7 +22,7 @@ It collects real-time sensor data, processes it using Apache Spark, stores and s
 - Python data generator for simulation.
 - Kafka topic for streaming.
 - Spark Structured Streaming jobs.
-- Trino as the distributed SQL query engine.
+- Trino is the distributed SQL query engine.
 - Pinot DB
 - Superset dashboards.
 
@@ -57,7 +57,7 @@ It collects real-time sensor data, processes it using Apache Spark, stores and s
 - Kafka new topic
   ↓  
 - Pinot real-time DB 
-  ↓
+  ↓   
 - Trino SQL engine 
   ↓  
 - Superset (visualization)  
